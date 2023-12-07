@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_contacts.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <main class="main-1">
+        <header class="header-side">
+            <h1 class="name"><i>Contacts</i></h1>
+        </header>
+        <header id="header" class="header">
+            <header class="header-1 fx-row fx-middle">
+                <a href="index.html" class="logo">
+                    <div class="logo-t">
+                        Coffe-Shop
+                    </div>
+                </a>
+                <div class="search-w fx-1">
+                    <form id="quicksearch" method="post"> Если номер есть, это не означает, что он действительный...</form>
+                </div>
+            </header>
+        </header>
+        <div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about_us.html">О нас</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-2 fx-row">
+            <div class="main-2-r fx-1">
+                <main class="main cf">
+                    <div class="s-header fx-row fx-middle">
+                        <h2>Контакты</h2>
+                    </div>
+                    <div class="numbers">+7909-##-##-###</div>
+                    <div class="numbers">+7996-##-##-###</div>
+                    <div class="hopes"><i>Пожелания посетителей</i></div>
+                    <div class="container">
+                        <label for="name">Ваше имя, прелестнейший(ая):</label>
+                        <input type="text" id="name">
+                    
+                        <label for="message">Ваше пожелание:</label>
+                        <textarea id="message" placeholder="В качестве комплимента можете указать данные своей карты :)"></textarea>
+                        
+                        <button onclick="submitForm()">Отправить</button>
+                    </div>
+                
+                    <script>
+                        function submitForm() {
+                            var name = document.getElementById('name').value;
+                            var message = document.getElementById('message').value;
+                            document.getElementById('name').value = '';
+                            document.getElementById('message').value = '';
+                        }
+                    </script>
+                </main>
+            </div>
+            <aside class="main-2-l">
+                <div class="stick">
+                    <div class="rec"></div>
+                </div>
+            </aside>
+        </div>
+        <footer class="footer fx-row">
+            <div class="f-l">2023 Coffee Shop</div>
+        </footer>
+    </main>
+</body>
+</html>

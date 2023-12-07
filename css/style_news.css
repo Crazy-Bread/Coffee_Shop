@@ -1,0 +1,374 @@
+/* Тело сайта*/
+body{
+    background: #444 url(../img/base.jpg) center top fixed;
+    /* background-color: #faeccf; */
+    background-size: 100% auto;
+    margin: 0px;
+    font: 15px 'Source Sans Pro', sans-serif;
+    line-height: normal;
+    color: #000;
+    min-height: 100%;
+    width: 100%;
+    font-weight: 400;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+* {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+.main-1{
+    background-color: #fff;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 15;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.header-side{
+    background: url(../img/base.jpg);
+    background-color: #fff;
+    background-position: right;
+    background-size: 100%;
+    background-attachment: no-repeat;
+    padding: 41.2px 35px;
+}
+
+.name{
+    font-size: 54px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 1px 20px #fefe22;
+}
+
+.header{
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 15px 15px -15px rgb(0 0 0 / 5%);
+    background-color: #fff;
+    position: relative;
+}
+.header-1{
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+div{
+    display: block;
+}
+
+.navigation{
+    background-color: #fff;
+    padding: 0 20px;
+    height: 50px;
+    position: relative;
+    box-shadow: 0 10px 15px -15px rgba(0, 0, 0, 0.3);
+}
+
+.main-2-r{
+    min-height: 80vh;
+}
+
+.main-2-l{
+    width: 300px;
+    background-color: #fafafb;
+    padding: 15px;
+}
+
+.stick{
+    position: sticky;
+    left: 0;
+    top: 80px;
+}
+
+.rec{
+    margin: 15px auto;
+    text-align: center;
+}
+
+.fx-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fx-end{
+    justify-content: flex-end;
+}
+
+.fx-1{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 50%;
+    -webkit-box-flex: 1;
+}
+
+.fx-middle{
+    align-items: center;
+}
+.login{
+    background: transparent;
+    white-space: nowrap;
+    height: 40px;
+    width: 268.038px;
+    line-height: 40px;
+}
+.register{
+    display: inline-block;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #2daae1;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.in{
+    display: inline-block;
+    height: 40px;
+    margin-left: 30px;
+    padding: 0 20px;
+    background-color: #d93baa;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.search-w{
+    position: relative;
+    margin: 0 20px;
+}
+
+.logo{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 46px;
+    padding-left: 50px;
+    line-height: 1;
+    background: url(../img/logo.png) 0 center / 43px no-repeat;
+    background-color: #fff;
+}
+
+.logo-t{
+    text-transform: uppercase;
+    font-weight: 900px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+ol, ul{
+    list-style: none;
+}
+.ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.navigation > ul > li{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    line-height: 50px;
+}
+
+aside, main{
+    display: block;
+    width: 100%;
+}
+
+.cf:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.main{
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 81.6px;
+}
+
+.s-header{
+    margin-bottom: 20px;
+    min-height: 24px;
+    position: relative;
+}
+
+.s-header h2{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+h2{
+    display: block;
+    font-weight: 200;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em; */
+}
+
+#assorty{
+    justify-content: flex-start;
+}
+
+.gt .it{
+    margin: 0 -10px;
+    width: auto;
+}
+
+.gt .eat{
+    width: -webkit-calc((100% - 80px)/4);
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: visible;
+    position: relative;
+    float: left;
+    padding: 0;
+    height: auto;
+    box-shadow: none;
+}
+
+.eat{
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+.gt .eat-img{
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 0;
+    /* padding-top: 144%; */
+    padding-top: 100%;
+    border-radius: 50%;
+}
+
+.eat-img{
+
+}
+
+.img-b{
+    overflow: hidden;
+    position: relative;
+    background-color: #222;
+}
+
+.gt .eat-img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.img-b img{
+    width: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    position: center;
+    height: 300px;
+}
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.gt .eat-text{
+    position: static;
+    box-shadow: 0 1.18rem 2.12rem -0.93rem #dadada;
+    padding: 5px 14px;
+    padding-bottom: 0;
+}
+
+.gt .eat-text{
+    float: none;
+}
+
+.eat-text{
+    width: 100%;
+}
+
+.gt .eat-t{
+    margin-bottom: 5px;
+}
+
+.gt .eat-t{
+    padding-right: 0;
+    margin: 5px 0;
+    text-align: center;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.eat-t{
+    display: block;
+}
+
+.text-of-prom{
+    white-space: pre-line;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #444;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    font-family: 'Caveat', cursive;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:-webkit-any-link{
+    cursor: pointer;
+}
+a:hover{
+    color: #d93baa;
+}
+
+.register:hover{
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    display: block;
+}
+
+.footer{
+    box-shadow: 0 -15px 15px -15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.f-l{
+    color: #444;
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+}

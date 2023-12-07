@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    <main class="main-1">
+        <header class="header-side">
+            <h1 class="name"><i>Menu</Menu></i></h1>
+        </header>
+        <header id="header" class="header">
+            <header class="header-1 fx-row fx-middle">
+                <a href="index.html" class="logo">
+                    <div class="logo-t">
+                        Coffe-Shop
+                    </div>
+                </a>
+                <div class="search-w fx-1">
+                    <form id="quicksearch" method="post"> Держите слюнки во рту...</form>
+                </div>
+            </header>
+        </header>
+        <div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about_us.html">О нас</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-2 fx-row">
+            <div class="main-2-r fx-1">
+                <main class="main gt cf">
+                    <div class="s-header fx-row fx-middle">
+                        <h2>Coffee Shop</h2>
+                    </div>
+                    <div class="it cf fx-row" id="assorty">
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../src/img/cof.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="coffee"><i>Эспрессо 69р</i> </h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity">col:</label>
+                                        <input type="int" id="quantity" />
+                                        <p class="summ"><input type="button" class="tap" value="click:" onclick="calculateTotal()" /><span id="total"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal() {
+                                            
+                                          var quantity = parseInt(document.getElementById('quantity').value);
+
+                                          var total = quantity * 69;
+                                    
+                                          document.getElementById('total').textContent = total.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/espresso.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="coffee"><i>Американо 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_2">col:</label>
+                                        <input type="int" id="quantity_2" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_2()" /><span id="total_2"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_2() {
+                                            
+                                            var quantity_2 = parseInt(document.getElementById('quantity_2').value);
+                                        
+                                            var total_2 = quantity_2 * 69;
+                                        
+                                            document.getElementById('total_2').textContent = total_2.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/latte.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="coffee"><i>Латте 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_3">col:</label>
+                                        <input type="int" id="quantity_3" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_3()" /><span id="total_3"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_3() {
+                                            
+                                            var quantity_3 = parseInt(document.getElementById('quantity_3').value);
+                                        
+                                            var total_3 = quantity_3 * 69;
+                                        
+                                            document.getElementById('total_3').textContent = total_3.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it cf fx-row" id="assorty">
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/green.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="tea"><i>Зелёный 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_4">col:</label>
+                                        <input type="int" id="quantity_4" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_4()" /><span id="total_4"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_4() {
+                                            
+                                            var quantity_4 = parseInt(document.getElementById('quantity_4').value);
+                                        
+                                            var total_4 = quantity_4 * 69;
+                                        
+                                            document.getElementById('total_4').textContent = total_4.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/tea.png" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="tea"><i>Холодный чёрный 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_5">col:</label>
+                                        <input type="int" id="quantity_5" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_5()" /><span id="total_5"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_5() {
+                                            
+                                            var quantity_5 = parseInt(document.getElementById('quantity_5').value);
+                                        
+                                            var total_5 = quantity_5 * 69;
+                                        
+                                            document.getElementById('total_5').textContent = total_5.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/ceylon.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="tea"><i>Цейлонский 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_6">col:</label>
+                                        <input type="int" id="quantity_6" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_6()" /><span id="total_6"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_6() {
+                                            
+                                            var quantity_6 = parseInt(document.getElementById('quantity_6').value);
+                                        
+                                            var total_6 = quantity_6 * 69;
+                                        
+                                            document.getElementById('total_6').textContent = total_6.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it cf fx-row" id="assorty">
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/cheez.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="desserts"><i>Чизкейк 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_7">col:</label>
+                                        <input type="int" id="quantity_7" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_7()" /><span id="total_7"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_7() {
+                                            
+                                            var quantity_7 = parseInt(document.getElementById('quantity_7').value);
+                                        
+                                            var total_7 = quantity_7 * 69;
+                                        
+                                            document.getElementById('total_7').textContent = total_7.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/brauny.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="desserts"><i>Брауни 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_8">col:</label>
+                                        <input type="int" id="quantity_8" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_8()" /><span id="total_8"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_8() {
+                                            
+                                            var quantity_8 = parseInt(document.getElementById('quantity_8').value);
+                                        
+                                            var total_8 = quantity_8 * 69;
+                                        
+                                            document.getElementById('total_8').textContent = total_8.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/ponch.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="desserts"><i>Пончики 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_9">col:</label>
+                                        <input type="int" id="quantity_9" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_9()" /><span id="total_9"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_9() {
+                                            
+                                            var quantity_9 = parseInt(document.getElementById('quantity_9').value);
+                                        
+                                            var total_9 = quantity_9 * 69;
+                                        
+                                            document.getElementById('total_9').textContent = total_9.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it cf fx-row" id="assorty">
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/grenki.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="zacooson"><i>Кафе гренки 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_10">col:</label>
+                                        <input type="int" id="quantity_10" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_10()" /><span id="total_10"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_10() {
+                                            
+                                            var quantity_10 = parseInt(document.getElementById('quantity_10').value);
+                                        
+                                            var total_10 = quantity_10 * 69;
+                                        
+                                            document.getElementById('total_10').textContent = total_10.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/hot.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="zacooson"><i>Мини-хотдоги 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_11">col:</label>
+                                        <input type="int" id="quantity_11" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_11()" /><span id="total_11"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_11() {
+                                            
+                                            var quantity_11 = parseInt(document.getElementById('quantity_11').value);
+                                        
+                                            var total_11 = quantity_11 * 69;
+                                        
+                                            document.getElementById('total_11').textContent = total_11.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="eat cf">
+                            <div class="eat-img img-b w-m">
+                                <img src="../img/cesar.jpg" alt="img">
+                            </div>
+                            <div class="eat-text">
+                                <h3 class="eat-t" title="zacooson"><i>Цезарь с курицей 69р</i></h3>
+                                <h3 class="eat-t">
+                                    <form>
+                                        <label for="quantity_12">col:</label>
+                                        <input type="int" id="quantity_12" />
+                                        <p class="summ"><input type="button" value="click:" onclick="calculateTotal_12()" /><span id="total_12"></span></p>
+                                    </form>
+                                    <script>
+                                        function calculateTotal_12() {
+                                            
+                                            var quantity_12 = parseInt(document.getElementById('quantity_12').value);
+                                        
+                                            var total_12 = quantity_12 * 69;
+                                        
+                                            document.getElementById('total_12').textContent = total_12.toFixed(2)+'р';
+                                        }
+                                    </script>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <aside class="main-2-l">
+                <div class="aside aside-d">
+                    <div class="nad">Кофе</div>
+                    <ul class="side-b by fx-row">
+                        <li>Эспрессо</li>
+                        <li>Американо</li>
+                        <li>Латте</li>
+                        <li>Капучино</li>
+                        <li>Мокко</li>
+                        <li>Флэт уайт</li>
+                        <li>Раф</li>
+                        <li>Макиато</li>
+                        <li>Айриш кофе</li>
+                    </ul>
+                    <div class="nad">Чай</div>
+                    <ul class="side-b by fx-row">
+                        <li>Зелёный</li>
+                        <li>Холодный ч.</li>
+                        <li>Цейлонский</li>
+                        <li>Мятный</li>
+                        <li>Имбирный</li>
+                        <li>Фруктовый</li>
+                    </ul>
+                    <div class="nad">Десерты</div>
+                    <ul class="side-b by fx-row">
+                        <li>Торт Шоколад</li>
+                        <li>Чизкейк</li>
+                        <li>Маффины</li>
+                        <li>Брауни</li>
+                        <li>Пончики</li>
+                        <li>Круассаны</li>
+                        <li>Пирожные</li>
+                    </ul>
+                    <div class="nad">Сэндвичи</div>
+                    <ul class="side-b by fx-row">
+                        <li>Клубный</li>
+                        <li>Чеддер-бекон</li>
+                    </ul>
+                    <div class="nad">Закуски</div>
+                    <ul class="side-b by fx-row">
+                        <li>Кафе гренки</li>
+                        <li>Мини-хотдоги</li>
+                        <li>Цезарь с кур.</li>
+                    </ul>
+                    <div class="nad">Дополнительно</div>
+                    <ul class="side-b by fx-row">
+                        <li>Молоко</li>
+                        <li>Сиропы</li>
+                        <li>Сливки</li>
+                        <li>Взбитый крем</li>
+                        <li>Шок. пудра</li>
+                    </ul>
+                    <div class="nad">Напитки на основе молока</div>
+                    <ul class="side-b by fx-row">
+                        <li>Шоколад</li>
+                        <li>Карамель</li>
+                        <li>Ваниль</li>
+                        <li>Фруктовые</li>
+                    </ul>
+                </div>
+                <div class="stick">
+                    <div class="rec"></div>
+                </div>
+            </aside>
+        </div>
+        <footer class="footer fx-row">
+            <div class="f-l">2023 Coffee Shop</div>
+        </footer>
+    </main>
+</body>
+</html>
